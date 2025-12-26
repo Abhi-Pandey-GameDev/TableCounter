@@ -1,4 +1,4 @@
-# Unity folders
+# Unity
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -9,16 +9,11 @@
 
 # IDE
 .vscode/
-.idea/
+.vs/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Unity generated
-*.csproj
-*.sln
-*.unityproj
-*.pidb
-*.booproj
-*.svd
+# Crash reports
+sysinfo.txt
