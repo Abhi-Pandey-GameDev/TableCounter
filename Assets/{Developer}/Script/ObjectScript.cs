@@ -3,7 +3,7 @@ using UnityEngine;
 public class ObjectScript : MonoBehaviour
 {
     public bool hasLeftTable = false;
-    public string currentTable = ""; // "Table1" / "Table2"
+    public string currentTable = ""; 
 
     public void OnPicked()
     {

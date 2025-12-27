@@ -7,19 +7,19 @@ public class CollisionChecker : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+                Debug.Log("Searching Object on Enter in Collision Checker");
         if (!collision.gameObject.CompareTag("Dragable")) return;
-
         ObjectScript obj = collision.gameObject.GetComponent<ObjectScript>();
+        Debug.Log("Dragable object is found"+obj);
         if (obj == null) return;
+        ui.AddToTable(gameObject.tag, 1);
 
-        // Dragging + object table se uth chuka
         if (player.isDragging && obj.hasLeftTable)
         {
             Debug.Log("Table hit during drag → Stop");
 
             player.DragEnd();
             obj.OnPlaced(gameObject.tag);
-            ui.AddToTable(gameObject.tag, 1);
         }
     }
 
